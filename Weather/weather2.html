@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nigeria Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f2f5f9] text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#0a3d62] text-white text-center p-5">
+    <h1 class="text-2xl font-bold">🇳🇬 Nigeria Real-Time Weather</h1>
+    <p class="text-sm mt-1">Live weather across all 36 states</p>
+  </header>
+
+  <!--Button-->
+
+  <div class="flex justify-center mt-6">
+    <button
+      id="loadBtn"
+      class="bg-[#0a3d62] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#1e3799] transition-colors"
+    >
+      Fetch Weather Data
+    </button>
+
+  </div>
+
+  <!-- Weather Grid -->
+  <div
+    id="weatherGrid"
+    class="p-5 grid gap-4 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]"
+  > </div>
+
+  <script src="weather2.js">
+
+  </script>
+
+</body>
+</html>
